@@ -23,7 +23,8 @@ CategoryTemplate.propTypes = {
   data: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired
+        title: PropTypes.string.isRequired,
+        authors: PropTypes.array.isRequired
       })
     })
   }),
@@ -54,6 +55,10 @@ export const pageQuery = graphql`
           rss
           vk
         }
+        authors {
+          id
+          name
+        }
       }
     }
     allMarkdownRemark(
@@ -70,6 +75,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
+            authorId
             category
             description
           }

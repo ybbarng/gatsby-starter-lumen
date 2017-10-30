@@ -14,7 +14,7 @@ module.exports = {
         path: '/about-us/'
       },
       {
-        label: 'Contact me',
+        label: 'Contact us',
         path: '/contact/'
       }
     ],

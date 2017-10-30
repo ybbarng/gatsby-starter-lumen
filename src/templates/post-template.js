@@ -48,7 +48,7 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
-        author {
+        group {
           name
           twitter
         }

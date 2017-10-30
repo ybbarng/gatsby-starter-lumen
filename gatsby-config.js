@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     url: 'https://alxshelepenok.github.com/gatsby-starter-lumen',
-    title: 'Blog by John Doe',
+    title: 'Blog by John Doe and Jane Doe',
     subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
     copyright: '© All rights reserved.',
     menu: [
@@ -10,16 +10,16 @@ module.exports = {
         path: '/'
       },
       {
-        label: 'About me',
-        path: '/about/'
+        label: 'About us',
+        path: '/about-us/'
       },
       {
         label: 'Contact me',
         path: '/contact/'
       }
     ],
-    author: {
-      name: 'John Doe',
+    group: {
+      name: 'John Doe & Jane Doe',
       email: '#',
       telegram: '#',
       twitter: '#',

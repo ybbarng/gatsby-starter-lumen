@@ -6,8 +6,9 @@ import './style.scss';
 
 class PostTemplateDetails extends React.Component {
   render() {
-    const { subtitle, group } = this.props.data.site.siteMetadata;
+    const { subtitle } = this.props.data.site.siteMetadata;
     const post = this.props.data.markdownRemark;
+    const { author } = post;
     const tags = post.fields.tagSlugs;
 
     const homeBlock = (
@@ -46,8 +47,8 @@ class PostTemplateDetails extends React.Component {
             <hr />
             <p className="post-single__footer-text">
               {subtitle}
-              <a href={group.twitter} target="_blank" rel="noopener noreferrer">
-                <br /> <strong>{group.name}</strong> on Twitter
+              <a href={author.twitter} target="_blank" rel="noopener noreferrer">
+                <br /> <strong>{author.name}</strong> on Twitter
               </a>
             </p>
           </div>
@@ -61,8 +62,7 @@ PostTemplateDetails.propTypes = {
   data: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
-        subtitle: PropTypes.string.isRequired,
-        group: PropTypes.object.isRequired
+        subtitle: PropTypes.string.isRequired
       })
     }),
     markdownRemark: PropTypes.object.isRequired

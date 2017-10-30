@@ -26,7 +26,29 @@ module.exports = {
       github: '#',
       rss: '#',
       vk: '#'
-    }
+    },
+    authors: [
+      {
+        id: 'john-doe',
+        name: 'John Doe',
+        email: '#',
+        telegram: '#',
+        twitter: '#',
+        github: '#',
+        rss: '#',
+        vk: '#'
+      },
+      {
+        id: 'jane-doe',
+        name: 'Jane Doe',
+        email: '#',
+        telegram: '#',
+        twitter: '#',
+        github: '#',
+        rss: '#',
+        vk: '#'
+      }
+    ]
   },
   plugins: [
     {
